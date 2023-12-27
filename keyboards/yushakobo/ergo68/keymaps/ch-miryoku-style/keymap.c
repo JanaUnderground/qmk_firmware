@@ -84,3 +84,8 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 
     return true;
 }
+
+void keyboard_post_init_user(void) {
+    rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR); // RGB_MATRIX_SOLID_COLOR, RGB_MATRIX_BREATHING, RGB_MATRIX_SPLASH, RGB_MATRIX_SOLID_SPLASH
+    rgblight_sethsv(HSV_WHITE);
+}
