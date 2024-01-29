@@ -71,21 +71,42 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 
     // layer state
     switch (get_highest_layer(layer_state)) {
+        case 0:
+            rgblight_sethsv(HSV_WHITE);
+            break;
         case 1:
-            RGB_MATRIX_INDICATOR_SET_COLOR(37, 0, 0, 128);
+            rgblight_sethsv(1, 255, 255);
             break;
         case 2:
-            RGB_MATRIX_INDICATOR_SET_COLOR(38, 0, 0, 128);
+            rgblight_sethsv(HSV_CYAN);
             break;
         case 3:
-            RGB_MATRIX_INDICATOR_SET_COLOR(39, 0, 0, 128);
+            rgblight_sethsv(250, 255, 255);
+            break;
+        case 4:
+            rgblight_sethsv(HSV_GREEN);
             break;
     }
 
     return true;
 }
 
+bool rgb_matrix_indicators_kb(void) {
+    if (!rgb_matrix_indicators_user()) {
+        return false;
+    }
+
+    rgb_matrix_set_color(9,  104, 0, 0);
+    rgb_matrix_set_color(22, 104, 0, 0);
+    rgb_matrix_set_color(23, 104, 0, 0);
+    rgb_matrix_set_color(36, 104, 0, 0);
+    rgb_matrix_set_color(32, 104, 0, 0);
+    rgb_matrix_set_color(31, 104, 0, 0);
+    rgb_matrix_set_color(30, 104, 0, 0);
+    return true;
+}
+
 void keyboard_post_init_user(void) {
-    rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR); // RGB_MATRIX_SOLID_COLOR, RGB_MATRIX_BREATHING, RGB_MATRIX_SPLASH, RGB_MATRIX_SOLID_SPLASH
+    //rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR); // RGB_MATRIX_SOLID_COLOR, RGB_MATRIX_BREATHING, RGB_MATRIX_SPLASH, RGB_MATRIX_SOLID_SPLASH
     rgblight_sethsv(HSV_WHITE);
 }
