@@ -18,18 +18,18 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         [0] = LAYOUT(
-        KC_ESC,     KC_1,           KC_2,           KC_3,           KC_4,           KC_5,                               KC_6,           KC_7,           KC_8,           KC_9,               KC_0,               KC_NO,
-        KC_NO,      KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,       KC_NO,      KC_NO,      KC_Y,           KC_U,           KC_I,           KC_O,               KC_P,               KC_LBRC,
-        KC_NO,      LGUI_T(KC_A),   LALT_T(KC_S),   LCTL_T(KC_D),   LSFT_T(KC_F),   KC_G,       KC_NO,      KC_NO,      KC_H,           RSFT_T(KC_J),   RCTL_T(KC_K),   RALT_T(KC_L),       RGUI_T(KC_SCLN),    KC_QUOT,
-        KC_NO,      KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,       KC_NO,      KC_NO,      KC_N,           KC_M,           KC_COMM,        KC_DOT,             KC_SLSH,            KC_NO,
-        KC_MEDIA_PREV_TRACK,KC_MEDIA_PLAY_PAUSE,KC_MEDIA_NEXT_TRACK,KC_ESC,         LT(2,KC_SPC),   KC_TAB,     KC_NO,      KC_NO,      LT(3,KC_ENT),   LT(1,KC_BSPC),  KC_DEL,         KC_KB_VOLUME_DOWN,    KC_KB_MUTE, KC_KB_VOLUME_UP
+        KC_ESC,                 KC_1,                   KC_2,                   KC_3,           KC_4,           KC_5,                               KC_6,           KC_7,           KC_8,           KC_9,               KC_0,               KC_NO,
+        KC_NO,                  KC_Q,                   KC_W,                   KC_E,           KC_R,           KC_T,       KC_NO,      KC_NO,      KC_Y,           KC_U,           KC_I,           KC_O,               KC_P,               KC_LBRC,
+        KC_NO,                  LGUI_T(KC_A),           LALT_T(KC_S),           LCTL_T(KC_D),   LSFT_T(KC_F),   KC_G,       KC_NO,      KC_NO,      KC_H,           RSFT_T(KC_J),   RCTL_T(KC_K),   RALT_T(KC_L),       RGUI_T(KC_SCLN),    KC_QUOT,
+        KC_NO,                  KC_Z,                   KC_X,                   KC_C,           KC_V,           KC_B,       KC_NO,      KC_NO,      KC_N,           KC_M,           KC_COMM,        KC_DOT,             KC_SLSH,            KC_NO,
+        KC_MEDIA_PREV_TRACK,    KC_MEDIA_PLAY_PAUSE,    KC_MEDIA_NEXT_TRACK,    KC_ESC,         LT(2,KC_SPC),   KC_TAB,     KC_NO,      KC_NO,      LT(3,KC_ENT),   LT(1,KC_BSPC),  KC_DEL,         KC_KB_VOLUME_DOWN,  KC_KB_MUTE,         KC_KB_VOLUME_UP
     ),
         [1] = LAYOUT(
         KC_TRNS,    KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_TRNS,                            KC_TRNS,        KC_TRNS,            KC_TRNS,            KC_TRNS,            KC_TRNS,            KC_TRNS,
-        KC_TRNS,    KC_TRNS,        KC_P7,          KC_P8,          KC_P9,          KC_TRNS,    KC_TRNS,    KC_TRNS,    RALT(KC_LBRC),  KC_TRNS,            KC_UP,              KC_TRNS,            RALT(KC_RBRC),      KC_TRNS,
-        KC_NUM,     KC_TRNS,        LGUI_T(KC_P4),  LALT_T(KC_P5),  LCTL_T(KC_P6),  KC_TRNS,    KC_TRNS,    KC_TRNS,    LSFT(KC_8),     RSFT_T(KC_LEFT),    RCTL_T(KC_DOWN),    RALT_T(KC_RIGHT),   LSFT(KC_9),         KC_TRNS,
-        KC_TRNS,    KC_TRNS,        KC_P1,          KC_P2,          KC_P3,          KC_TRNS,    KC_TRNS,    KC_TRNS,    RALT(KC_QUOT),  KC_PPLS,            KC_PEQL,            KC_PMNS,            RALT(KC_NUHS),      KC_TRNS,
-        KC_TRNS,    KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_P0,          KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,        KC_TRNS,            KC_TRNS,            KC_TRNS,            KC_TRNS,            KC_TRNS
+        KC_TRNS,    KC_TRNS,        KC_7,           KC_8,           KC_9,           KC_TRNS,    KC_TRNS,    KC_TRNS,    RALT(KC_LBRC),  KC_TRNS,            KC_UP,              KC_TRNS,            RALT(KC_RBRC),      KC_TRNS,
+        KC_NUM,     KC_TRNS,        LGUI_T(KC_4),   LALT_T(KC_5),   LCTL_T(KC_6),   KC_TRNS,    KC_TRNS,    KC_TRNS,    LSFT(KC_8),     RSFT_T(KC_LEFT),    RCTL_T(KC_DOWN),    RALT_T(KC_RIGHT),   LSFT(KC_9),         KC_TRNS,
+        KC_TRNS,    KC_TRNS,        KC_1,           KC_2,           KC_3,           KC_TRNS,    KC_TRNS,    KC_TRNS,    RALT(KC_QUOT),  LSFT(KC_1),         LSFT(KC_0),         KC_SLSH,            RALT(KC_NUHS),      KC_TRNS,
+        KC_TRNS,    KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_0,           KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,        KC_TRNS,            KC_TRNS,            KC_TRNS,            KC_TRNS,            KC_TRNS
     ),
         [2] = LAYOUT(
         KC_TRNS,    KC_TRNS,            KC_TRNS,        KC_TRNS,        KC_TRNS,            KC_TRNS,                                KC_TRNS,    KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_TRNS,
